@@ -210,7 +210,7 @@ Be casual, clear, and concise.
               <div className="relative">
                 {isSpeaking && <div className="absolute inset-0 rounded-full bg-blue-100 animate-ping opacity-75"></div>}
                 <div className="relative z-10 w-20 h-20 rounded-full overflow-hidden border-4 border-white shadow-md bg-blue-100">
-                  <Image src="/AIR.png" alt="AI Recruiter" width={80} height={80} className="object-cover w-full h-full" priority />
+                  <Image src="/hr.png" alt="AI Recruiter" width={80} height={80} className="object-cover w-full h-full" priority />
                 </div>
               </div>
               <div className="text-center">
