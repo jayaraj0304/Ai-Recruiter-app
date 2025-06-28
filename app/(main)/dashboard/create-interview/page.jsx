@@ -9,7 +9,7 @@ import FormContainer from './_components/FormContainer'
 import { toast } from 'sonner'
 import QuestionsList from './_components/QuestionsList'
 import InterviewLink from './_components/InterviewLink'
-import { useUser } from '@clerk/nextjs'
+import { useUser } from '@/app/provider'
 function CreateInterview() {
   const router=useRouter();
   const[step,setStep]=useState(1);
