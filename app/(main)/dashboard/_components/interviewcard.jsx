@@ -7,9 +7,9 @@ import Link from "next/link";
 
 function InterviewCard({ interview, viewDetail = false, feedbackCount }) {
   const getInterviewUrl = () => {
-    const baseUrl = process.env.NEXT_PUBLIC_HOST_URL.replace(/\/$/, "");
-    return `${baseUrl}/${interview?.interview_id}`;
-  };
+  const baseUrl = process.env.NEXT_PUBLIC_HOST_URL.replace(/\/$/, "");
+  return `${baseUrl}/${interview?.interview_id}`;
+};
 
   const copyLink = async () => {
     try {
