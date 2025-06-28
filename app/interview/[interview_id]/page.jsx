@@ -74,17 +74,18 @@ function Interview() {
   //   }
   
   //   // Validate email
-  //   const emailRegex = /^[^\s@]+@domain\.com$/; // Strict email validation for @domain.com
-  //   if (!emailRegex.test(userEmail)) {
-  //     toast.warning("Valid email required (e.g., user@domain.com)");
-  //     return false;
-  //   }
+      const emailRegex = /^[^\s@]+@[^\s@]+\.(com)$/; // Validates presence of '@' and '.com'
+      if (!emailRegex.test(userEmail)) {
+          toast.warning("Email must include '@' and end with '.com'");
+          return false;
+        }
+
   
-  //   return true; // Validation passed
+     return true; // Validation passed
   };
   
   const onJoinInterview = async () => {
-    // if (!validateJoin()) return; // Deny entry if validation fails
+     if (!validateJoin()) return; // Deny entry if validation fails
   
     try {
       setInterviewInfo({
