@@ -1,5 +1,5 @@
 import React from 'react'
-import DashboardProvider from './provider'
+import DashboardProvider from './providerr'
 import Provider from '../provider'
 
 function DashboardLayout({children}){

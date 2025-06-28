@@ -1,4 +1,4 @@
-import Provider from '@/app/Provider'; // or wherever your UserDetailContext.Provider is defined
+import Provider from '@/app/provider'; // or wherever your UserDetailContext.Provider is defined
 import React from 'react';
 import { SidebarProvider } from '@/components/ui/sidebar';
 import AppSidebar from './_components/AppSidebar';
