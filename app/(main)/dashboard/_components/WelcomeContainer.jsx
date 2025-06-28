@@ -2,9 +2,17 @@
 import React from 'react';
 import Image from 'next/image';
 import { useUser } from '@/app/provider';
+import { supabase } from '@/services/supabaseClient';
 
 function WelcomeContainer() {
   const { user } = useUser();
+  const { data, error } = await supabase
+  .from('Users')
+  .select('credits')
+    .eq('email', user.email)  // user.email should come from the auth session
+  .single();
+
+const credits = data.credits;
 
   return (
     <div className='bg-white p-5 rounded-xl flex justify-between items-center w-full'>
